@@ -15,7 +15,7 @@
 {{ data.utils.mergePathParameters(data); }}
 {{ data.utils.getParameters(data); }}
 
-{{? data.options.codeSamples || data.operation["x-code-samples"] }}
+{{? data.options.codeSamples || data.operation["x-code-samples"] || true }}
 > Code samples
 
 {{= data.utils.getCodeSamples(data) }}
